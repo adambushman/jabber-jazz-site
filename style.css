@@ -1,0 +1,335 @@
+:root {
+    --main-background: #050505;
+    --alt-background: #dbe2ea;
+    --main-text: #ffffff;
+    --alt-text: #f6ee26;
+    --main-highlight: #f6ee26;
+    --alt-highlight: #dbe2ea;
+}
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-text);
+    background-color: var(--main-background);
+    margin:0;
+    padding:0;
+}
+.container {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    width:100%;
+}
+#main-jj {
+    max-width:30%;
+}
+#main-lettering {
+    max-width:85%;
+}
+.core-text {
+    width:90%;
+    margin-top:3vh;
+    font-size:0.8rem;
+    text-align:center;
+}
+.highlight {
+    color: var(--main-highlight);
+}
+.links {
+    margin-top:3vh;
+}
+.f-30 {
+    height:30px;
+    width:30px;
+}
+.links :not(:last-child) {
+    padding-right:10vh;
+}
+.main {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+}
+.main .heading {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:7vh;
+    margin-top:3vh;
+    background-color:var(--main-highlight);
+}
+.main .heading :not(:last-child) {
+    padding-right:3vw;
+}
+.main .heading h1 {
+    background-color: transparent;
+    color:var(--main-background);
+}
+.main .heading .f-30 {
+    stroke:var(--main-background);
+    background-color:transparent;
+}
+.main .content {
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    background-color:var(--alt-background);
+}
+.main .content .media-card {
+    position:relative;
+    display:inline-block;
+    overflow:hidden;
+    max-width:8rem;
+}
+.main .content .media-card img {
+    display:block;
+    max-width:100%;
+    height:auto;
+    opacity:65%;
+}
+.main .content .media-card svg {
+    position: absolute;
+    width:50%;
+    height:50%;
+    background-color: transparent;
+    stroke:none;
+    fill:var(--main-text);
+    top:25%;
+    left:25%;
+}
+.main .content .media-card p {
+    width:100%;
+    text-align:center;
+    color:var(--main-background);
+    background-color:var(--main-text);
+}
+.main .text-card {
+    width:100%;
+    padding:0 0.75vh;
+}
+.main .text-card a {
+    text-decoration:none;
+}
+.main .text-card h2 {
+    padding-top:0.35rem;
+    padding-bottom:0.35rem;
+}
+.main .text-card p {
+    font-size:0.9rem;
+}
+.main .vert-line {
+    width:100%;
+    height:0.5px;
+    background-color:var(--main-text);
+    margin:0.5vh 0vh;
+    opacity:70%;
+}
+.main img {
+    max-width:100%;
+}
+.main .txt p {
+    font-size:1.25rem;
+    padding:1.5vh 1.5vh 0vh 1.5vh;
+}
+.main .txt a {
+    text-decoration:none;
+    color:var(--main-highlight);
+}
+.main .to-store {
+    display:flex;
+    justify-content:center;
+    width:100%;
+    margin:1.5vh 0vh;
+}
+.main .to-store-link {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    background-color:var(--main-text);
+    height:6vh;
+    width:15rem;
+    border-radius:5px;
+}
+.main .to-store-link :not(:last-child) {
+    padding-right:3vw;
+}
+.main .to-store h2 {
+    background-color:transparent;
+    color:var(--main-background);
+    background-color:var(--main-text);
+}
+.main .to-store .f-30 {
+    stroke:var(--main-background);
+    background-color:transparent;
+}
+
+/* Contact Section */
+.contact {
+    padding-top:1.5vh;
+    width:100%;
+}
+.contact .form {
+    width:100%;
+    overflow:hidden;
+}
+.contact .form input {
+    display:block;
+    width:100%;
+    height:4vh;
+    background:var(--main-text);
+    color:var(--main-background);
+    padding:5px;
+    margin-bottom:1vh;
+    border:none;
+    text-align:center;
+}
+.contact .form input:focus {
+    outline:none;
+}
+.contact .form textarea {
+    display:block;
+    width:100%;
+    height:125px;
+    background:var(--main-text);
+    color:var(--main-background);
+    padding:5px;
+    margin-bottom:1vh;
+    text-align:center;
+    border:none;
+}
+.contact .form textarea:focus {
+    outline:none;
+}
+.contact .form #submit {
+    width:100px;
+    margin:0 auto;
+}
+
+/* Footer Bar */
+#foot .container {
+    background-color:var(--main-background);
+    margin-top:3vh;
+    padding:2vh 0vh 2vh 0vh;
+    width:100%;
+}
+#foot p {
+    color:var(--main-text);
+    background-color:transparent;
+}
+#foot img {
+    max-width:65%;
+    background-color:transparent;
+    padding-bottom:2vh;
+}
+
+/* Desktop Adjustments */
+@media screen and (min-width: 500px) { 
+    .imgs {
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:center;
+    }
+    #main-jj {
+        max-width:15%;
+    }
+    #main-lettering {
+        max-width:35%;
+    }
+    .core-text {
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        width:60%;
+        margin-top:2vh;
+    }
+    .core-text :not(:last-child) {
+        padding-right:0.75vw;
+    }
+    .main {
+        width:100%;
+    }
+    .main .heading {
+        width:70%;
+        height:5vh;
+    }
+    .main .heading :not(:last-child) {
+        padding-right:1.5vw;
+    }
+    .main .content {
+        width:60%;
+    }
+    .main .heading {
+        margin-top:6vh;
+    }
+    .main .heading h1 {
+        font-size:1.3rem;
+    }
+    .main .heading .f-30 {
+        height:23px;
+        width:23px;
+    }
+    .main .vert-line {
+        width:60%;
+        height:0.5px;
+    }
+    .main img {
+        max-width:50%;
+    }
+    .main .txt {
+        width:70%;
+    }
+    .contact {
+        display:flex;
+        justify-content:center;
+    }
+    .contact .form {
+        width:50%;
+    }
+    #foot img {
+        max-width:30%;
+    }
+}
+
+@media screen and (min-width: 1025px) { 
+    #main-jj {
+        max-width:10%;
+    }
+    #main-lettering {
+        max-width:20%;
+    }
+    .main .heading {
+        width:50%;
+        height:5vh;
+    }
+    .main .heading :not(:last-child) {
+        padding-right:0.8vw;
+    }
+    .main .content {
+        width:40%;
+    }
+    .main .vert-line {
+        width:40%;
+        height:0.5px;
+    }
+    .main img {
+        max-width:35%;
+    }
+    .main .txt {
+        width:45%;
+    }
+    .contact {
+        display:flex;
+        justify-content:center;
+    }
+    .contact .form {
+        width:40%;
+    }
+    #foot img {
+        max-width:20%;
+    }
+}
