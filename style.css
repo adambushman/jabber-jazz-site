@@ -322,6 +322,9 @@
     .main .txt {
         width:45%;
     }
+    .main .to-store-link :not(:last-child) {
+        padding-right:0.75vw;
+    }
     .contact {
         display:flex;
         justify-content:center;
