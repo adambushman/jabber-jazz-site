@@ -293,6 +293,9 @@
     #foot img {
         max-width:30%;
     }
+    #submit {
+        cursor:pointer;
+    }
 }
 
 @media screen and (min-width: 1025px) { 
